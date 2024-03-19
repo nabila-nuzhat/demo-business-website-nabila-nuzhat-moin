@@ -1,0 +1,673 @@
+/*font-family: 'Roboto', sans-serif;
+Thin 100
+Light 300
+Regular 400
+Medium 500
+Bold 700
+Black 900*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	height: 88px;
+	background-color: #14212b;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+
+header section,
+.intro
+{
+	display: flex;
+	margin: auto;
+}
+header section{
+	max-width: 1763px;
+	justify-content: space-between;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+header section nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	border-top: solid 4px #14212b;
+	border-bottom: solid 4px #14212b;
+	transition: 0.3s;
+}
+
+header section nav ul li a{
+	text-decoration: none;
+	line-height: 80px;
+	padding: 0 15px;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700px;
+	color: #fff;
+	display: block;
+}
+
+header section nav ul li a:hover{
+	color: #ff4a17;
+}
+
+header section nav ul li:hover{
+	border-top: solid 4px #ff4a17;
+}
+
+
+header section div img{
+	padding-top: 15%;
+}
+
+header div p{
+   padding-top: 15%;
+   list-style-type: none;
+}
+
+header div p a{
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	transition: 0.3s;
+	font-weight: 400;
+	text-align: right;
+	display: block;
+	color: #fff;
+}
+
+header div p a:hover{
+	color: #fd9071;}
+
+.banner{
+	height: 800px;
+	background-image: url(../image/banner-1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.banner .overlay{
+	height: 800px;
+	background-color: rgba(21, 38, 71,.45);
+}
+
+.banner .overlay div{
+	width: 80%;
+	padding: 15% 10%;
+}
+
+.banner .overlay div section h5{
+	font-size: 19px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 20px;}
+
+.banner .overlay div section h2{
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 90px;
+    margin: 10px 0 15px;
+    color: #fff;
+}
+
+.banner .overlay div section p{
+	font-size: 22px;
+    color: #fff;
+    line-height: 35px;
+    margin-bottom: 40px;
+    color: #e2e2e2;
+}
+
+.overlay section button{
+    border-radius: 6px;
+    border: solid 2px #ff4a17;
+   }
+
+.overlay section button a{
+	background-color: #ff4a17;
+	display: block;
+	padding: 20px 35px;
+	color: #fff;
+	font-weight: 600;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.overlay section button a:hover,
+.tell-us button a:hover{
+	background-color: #f53702;
+
+}
+
+.overlay section button:hover,
+.tell-us button:hover{
+	border:solid 2px #f53702;
+}
+
+.intro{
+	max-width: 1140px;
+	padding: 150px 0;
+}
+.intro section{
+	max-width: 570px;
+}
+
+.intro section img{
+	width: 100%;
+}
+
+.intro .intro-text{
+	padding-left: 40px;
+	margin: 30px 0;
+}
+.intro .intro-text h1{
+	font-size: 55px;
+	font-weight: 900px;
+	color: #ff4a17;
+}
+
+.intro .intro-text h2{
+	color: #0a272c;
+	font-size: 50px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+.intro .intro-text h2 span{
+	color: #ff4a17;
+}
+
+.intro .intro-text p{
+	color: #687693;
+	font-size: 18px;
+	line-height: 40px;
+	text-align: justify;
+}
+
+.service-head{
+	text-align: center;
+	margin-top: 40px;
+	padding: 40px 0;
+}
+
+.service-head h3 a{
+font-size: 50px;
+color: #ff4a17;
+font-family: "Roboto", sans-serif;
+text-transform: uppercase;
+font-weight: 500;
+margin-bottom: 20px;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.service-head h3 a:hover{
+	background-color: #ff4a17;
+	color: #fff;
+	box-shadow: 0px 0px 30px 0px rgb(20 33 43 / 15%);
+	padding: 0 10px;
+	border-radius: 3px;
+}
+
+.service-head h2{
+font-size: 50px;
+color: #14212b;
+text-transform: capitalize;
+font-weight: 700;
+margin-bottom: 20px;
+}
+
+.service-blocks{
+	max-width: 1140px;
+	margin: auto;
+}
+.services-top,
+.services-bottom{
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 40px;
+}
+
+.service-icon{
+ text-align: center;
+line-height: 100px;
+margin: 40px 0 15px 0;
+}
+.service-icon i{
+font-size: 40px;
+color: #ff4a17;
+background-color: #f5f5f5;
+padding: 30px;
+border-radius: 50%;
+border: solid 1px  #f5f5f5;
+}
+
+.service-blocks div section{
+	text-align: center;
+	transition: .3s;
+	max-width: 350px;
+	justify-content: space-between;
+	height: 400px;
+	box-shadow: 0px 0px 20px 0px rgb(20 33 43 / 10%);
+	border-radius: 5px;
+}
+
+.service-blocks div section:hover{
+	background-color: #14212b;
+	color: #fff;
+}
+
+}
+.service-blocks div section h2{
+	color: #14212b;
+	font-size: 27px;
+	margin-bottom: 20px;
+}
+
+.service-blocks div section p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	color: #687693;
+	line-height: 25px;
+	padding: 15px 30px;
+}
+
+.service-blocks div section button,
+.tell-us button,
+.contact section div form button{
+	border: solid 1px #ff4a17;
+	border-radius: 3px;
+}
+.service-blocks div section button a,
+.contact section div form button
+{
+	background-color: #ff4a17;
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+	font-weight: 600;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-size: 13px;
+	font-family: 'Roboto', sans-serif;
+}
+/*===========Services list page======*/
+.banner-service{
+	background-image: url(../image/banner-2.jpg);
+	height: 350px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.overlay-service{
+	height: 350px;
+	background-color: rgba(21, 38, 71,.45);
+}
+
+.banner-service .overlay-service h2{
+	padding: 150px 0;
+	color: #fff;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.tell-us{
+	max-width: 1140px;
+	margin: auto;
+	background: rgb(20, 33, 43);
+	height: 380px;
+	padding: 80px 85px;
+	border-radius: 6px;
+	text-align: center;
+	box-shadow: 0px 0px 20px 0px rgb(20 33 43 / 20%);
+	position: relative;
+}
+
+.tell-us p{
+	font-size: 50px;
+    color: #fff;
+    margin-top: 20px;}
+
+.tell-us button{
+	margin-top: 30px;
+	border: solid 2px #ff4a17;
+}
+.tell-us button a{
+	width: 200px;
+	background-color: #ff4a17;
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+	font-weight: 600;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.tell-us div{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.tell-us section{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.big-footer-serv{
+	margin-top: 300px;
+}
+/*=========Services list page======*/
+.process
+{
+	background-color: rgb(20, 33, 43);
+	height: 700px;
+	padding: 40px 0;
+	margin-top: 150px;
+}
+
+.process h3{
+	color: #fff;
+	font-size: 32px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.process section,
+.contact section
+{
+	max-width: 1140px;
+	margin: auto;
+	justify-content: space-between;
+	display: flex;
+}
+
+.process section .process-list{
+max-width: 350px;
+margin-top: 15px;
+transition: transform .2s;
+}
+
+.process section .process-list:hover{
+	transform: scale(1.1);
+}
+
+.process section div img{
+width: 100%;
+display: block;
+}
+
+.process-list div{
+background-color: #ff4a17;
+text-align: center;
+}
+.process-list h2{
+	color: #fff;
+	padding: 10px 0;
+	font-size: 25px;
+}
+
+.process-list div button{
+	background-color: #ff4a17;
+	padding: 5px;
+	border: solid 1px #fff;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+.process-list div button a i{
+	color: #fff;
+	font-weight: 500px;
+	font-size: 20px;
+}
+
+.contact{
+	background-color: #f3f4f4;
+	color: rgb(20, 33, 43);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+.contact section{
+	max-width: 1140px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact section div{
+	max-width: 500px;
+	padding: 100px 0;
+}
+
+.contact section div section{
+	width: 500px;
+	border: dotted 1px rgb(20, 33, 43);
+	padding: 40px; 
+	margin-top: 30px;
+}
+.contact section div form{
+	width: 100%;
+}
+
+.contact section div form input,
+.contact section div form textarea
+{
+	width: 100%;
+	display: block;
+	margin: 5px 0;
+}
+
+.contact section div form input
+{height: 30px;}
+
+.contact section div form textarea{
+	height: 90px;
+}
+
+.contact section div form button:hover{
+	background-color: #ff843d;
+}
+
+.contact section div h3{
+ font-weight: 400;
+ margin: 10px 0;
+}
+
+.contact section div p{
+ font-weight: 300;
+ margin-bottom: 10px;
+ padding: 3px;
+}
+
+.big-footer{
+	background-color: rgb(20, 33, 43);
+	height: 250px;
+	padding: 40px 0;
+}
+
+.big-footer div{
+	max-width: 1140px;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.big-footer div section{
+	max-width: 270px;
+}
+.big-footer div section h3{
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.big-footer div section p{
+	color: #cbcbcb;
+	margin-top: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25px;
+}
+
+.big-footer div section ul li{
+	list-style-type: none;
+	margin-top: 10px;
+}
+.big-footer div section ul li a{
+	text-decoration: none;
+	color: #cbcbcb;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.big-footer div section ul li a:hover,
+.big-footer div section section a:hover{
+	color: #ff4a17;
+}
+
+.big-footer div section section a{
+	color: #fff;
+	font-size: 30px;
+	margin-right: 10px;
+}
+
+footer{
+	background-color: #18252f;
+	text-align: center;
+	padding: 20px 0;
+}
+
+footer h5{
+	color: #fff;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+}
+/*===Tax Management Service Description Page==*/
+.bg-tax{
+	background-color: #f3f4f4;
+	height: 300px;
+}
+
+.bg-tax h2{
+	font-weight: 900;
+	font-size: 40px;
+	color: #18252f;
+	text-align: center;
+	line-height: 300px;
+	text-transform: uppercase;
+}
+
+.main-tax{
+	max-width: 1140px;
+	margin: auto;
+	padding: 90px 0 100px;
+}
+
+.description h2{
+	font-weight: 700;
+	font-size: 35px;
+	color: #14212b;
+	text-transform: capitalize;
+	margin: 30px 0 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.description h3{
+	font-weight: 700;
+	font-size: 35px;
+	color: #14212b;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.description p{
+	font-weight: 400;
+	font-size: 16px;
+	color: #14212b;
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 30px;
+	text-align: justify;
+}
+
+.description ul{
+	font-weight: 400;
+	font-size: 16px;
+	color: #14212b;
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 30px;
+}
+
+.description ul li i{
+	color: #ff4a17;
+	padding-right: 10px;
+}
+/*===Tax Management Service Description Page==*/
+
+header nav ul .dropdown{
+	position: relative;
+	transition: 0.2s;
+}
+
+header nav ul .dropdown .drop-menu{
+	position: absolute;
+	display: none;
+	background-color: rgb(20, 33, 43);
+	width: 210px;
+}
+
+header nav ul .dropdown .drop-menu li{
+border: none;
+text-align: center;
+}
+
+header nav ul .dropdown:hover .drop-menu{
+	display: block;
+}
+
+#myBtn{
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  border: solid 2px #ff4a17;
+  z-index: 999;
+  background-color: #fd9071; 
+  color: #fff;
+  cursor: pointer;
+  padding: 15px; 
+  line-height: 15px;
+  border-radius: 50%; 
+  font-size: 18px; 
+  font-weight: 700;
+}
+
+#myBtn:hover {
+  background-color: #ff4a17;
+}
